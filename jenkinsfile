@@ -1,10 +1,17 @@
 pipeline {
-agent any
-stages {
-stage('clone') {
-steps {
-echo "code is build"
-}
-}
-}
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+            
+        stage('bye') {
+            steps {
+                echo 'bye'
+               }
+            }    
+        }
+    }
 }
